@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ngohongbao.personalnotes'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.ngohongbao.personalnotes"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Project chủ động dùng API Android chuẩn, không cần thư viện UI ngoài.
+    // Ưu điểm: nhẹ, ít lỗi dependency, dễ mở trên Android Studio và dễ bảo vệ.
+}
