@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="?android:attr/windowBackground">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thêm ghi chú" android:textSize="28sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Tiêu đề và nội dung là bắt buộc. Các tùy chọn khác giúp quản lý ghi chú tốt hơn." android:textColor="?android:attr/textColorSecondary"/>
+    <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:hint="Tiêu đề" android:singleLine="true" android:background="@drawable/bg_input" android:padding="14dp"/>
+    <EditText android:id="@+id/etContent" android:layout_width="match_parent" android:layout_height="180dp" android:layout_marginTop="12dp" android:hint="Nội dung ghi chú..." android:gravity="top|start" android:inputType="textMultiLine|textCapSentences" android:background="@drawable/bg_input" android:padding="14dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Danh mục" android:textStyle="bold"/>
+    <Spinner android:id="@+id/spCategory" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/bg_input"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Mức ưu tiên" android:textStyle="bold"/>
+    <Spinner android:id="@+id/spPriority" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/bg_input"/>
+    <CheckBox android:id="@+id/cbImportant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="★ Đánh dấu quan trọng"/>
+    <CheckBox android:id="@+id/cbPinned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📌 Ghim ghi chú lên đầu"/>
+    <TextView android:id="@+id/tvReminder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Chưa đặt nhắc việc" android:textColor="?android:attr/textColorSecondary"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+        <Button android:id="@+id/btnPickReminder" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Chọn ngày giờ" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+        <Space android:layout_width="8dp" android:layout_height="1dp"/><Button android:id="@+id/btnClearReminder" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Bỏ nhắc" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="20dp" android:text="LƯU GHI CHÚ" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/bg_primary_button"/>
+    <Button android:id="@+id/btnCancel" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Hủy" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+</LinearLayout></ScrollView>
