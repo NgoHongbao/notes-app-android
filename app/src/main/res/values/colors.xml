@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_blue">#246BFD</color>
+    <color name="brand_blue_dark">#1649B8</color>
+    <color name="danger">#D93025</color>
+    <color name="success">#188038</color>
+    <color name="warning">#F29900</color>
+    <color name="soft_blue">#EAF1FF</color>
+    <color name="soft_gray">#F4F6F9</color>
+    <color name="line">#D9DEE8</color>
+</resources>
