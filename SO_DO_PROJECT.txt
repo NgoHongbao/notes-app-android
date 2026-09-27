@@ -1,0 +1,33 @@
+PersonalNotesAndroid/
+├── app/
+│   ├── build.gradle
+│   └── src/main/
+│       ├── AndroidManifest.xml
+│       ├── java/com/ngohongbao/personalnotes/
+│       │   ├── MainActivity.java          # Danh sách, search, filter, sort
+│       │   ├── AddNoteActivity.java       # Thêm + draft
+│       │   ├── NoteDetailActivity.java    # Chi tiết + share + trash
+│       │   ├── EditNoteActivity.java      # Sửa
+│       │   ├── TrashActivity.java         # Khôi phục/xóa vĩnh viễn
+│       │   ├── StatsActivity.java         # Thống kê
+│       │   ├── SettingsActivity.java      # Dark mode + backup
+│       │   ├── DatabaseHelper.java        # SQLiteOpenHelper
+│       │   ├── Note.java                  # Model
+│       │   ├── NoteAdapter.java           # Custom ListView adapter
+│       │   ├── ReminderHelper.java        # AlarmManager
+│       │   ├── ReminderReceiver.java      # Notification
+│       │   ├── BootReceiver.java          # Đăng ký lại reminder
+│       │   ├── BackupHelper.java          # JSON backup
+│       │   ├── ThemeManager.java          # Dark mode
+│       │   ├── BaseActivity.java          # Theme chung
+│       │   ├── DateUtils.java             # Format ngày
+│       │   └── NoteFormHelper.java        # Date/Time picker
+│       └── res/
+│           ├── layout/                    # XML giao diện
+│           ├── drawable/                  # Card/input/button/icon
+│           └── values/                    # strings/colors/themes
+├── README.md
+├── HUONG_DAN_ANDROID_STUDIO.md
+├── GHI_CHU_CODE.md
+├── CAU_HOI_BAO_VE.md
+└── KIEM_TRA_PROJECT.txt
