@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="18dp" android:background="?android:attr/windowBackground">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ghi chú của tôi" android:textStyle="bold" android:textSize="28sp" android:textColor="?android:attr/textColorPrimary"/>
+            <TextView android:id="@+id/tvCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 ghi chú" android:textSize="13sp" android:textColor="?android:attr/textColorSecondary"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnStats" android:layout_width="44dp" android:layout_height="44dp" android:text="◫" android:textSize="18sp" android:background="@drawable/bg_secondary_button"/>
+        <Button android:id="@+id/btnTrash" android:layout_width="44dp" android:layout_height="44dp" android:text="♻" android:textSize="18sp" android:background="@drawable/bg_secondary_button"/>
+        <Button android:id="@+id/btnSettings" android:layout_width="44dp" android:layout_height="44dp" android:text="⚙" android:textSize="18sp" android:background="@drawable/bg_secondary_button"/>
+    </LinearLayout>
+
+    <EditText android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="Tìm theo tiêu đề hoặc nội dung..." android:singleLine="true" android:background="@drawable/bg_input" android:padding="14dp"/>
+
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginTop="12dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnAll" android:layout_width="wrap_content" android:layout_height="44dp" android:text="Tất cả" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+            <Button android:id="@+id/btnImportant" android:layout_width="wrap_content" android:layout_height="44dp" android:text="★ Quan trọng" android:textColor="@color/brand_blue" android:alpha="0.55" android:background="@drawable/bg_secondary_button"/>
+            <Button android:id="@+id/btnPinned" android:layout_width="wrap_content" android:layout_height="44dp" android:text="📌 Đã ghim" android:textColor="@color/brand_blue" android:alpha="0.55" android:background="@drawable/bg_secondary_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+        <Spinner android:id="@+id/spCategory" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/bg_input"/>
+        <Space android:layout_width="10dp" android:layout_height="1dp"/>
+        <Spinner android:id="@+id/spSort" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:background="@drawable/bg_input"/>
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="12dp">
+        <ListView android:id="@+id/lvNotes" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="10dp" android:clipToPadding="false" android:paddingBottom="8dp"/>
+        <TextView android:id="@+id/tvEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="Chưa có ghi chú phù hợp\nHãy tạo ghi chú đầu tiên ✨" android:gravity="center" android:textSize="16sp" android:visibility="gone" android:textColor="?android:attr/textColorSecondary"/>
+    </FrameLayout>
+
+    <Button android:id="@+id/btnAdd" android:layout_width="match_parent" android:layout_height="56dp" android:text="＋  Tạo ghi chú mới" android:textStyle="bold" android:textSize="16sp" android:textColor="#FFFFFF" android:background="@drawable/bg_primary_button"/>
+</LinearLayout>
