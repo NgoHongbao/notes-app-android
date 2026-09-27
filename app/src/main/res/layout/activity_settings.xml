@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="?android:attr/windowBackground">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+    <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="44dp" android:text="← Quay lại" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Cài đặt" android:textSize="28sp" android:textStyle="bold"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="16dp" android:background="@drawable/bg_card" android:padding="16dp">
+        <Switch android:id="@+id/swDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chế độ tối"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Sắp xếp mặc định" android:textStyle="bold"/>
+        <Spinner android:id="@+id/spDefaultSort" android:layout_width="match_parent" android:layout_height="50dp" android:background="@drawable/bg_input"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:background="@drawable/bg_card" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sao lưu dữ liệu" android:textSize="18sp" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xuất/nhập file JSON qua trình chọn tệp của Android, không cần quyền truy cập bộ nhớ." android:layout_marginTop="4dp" android:textColor="?android:attr/textColorSecondary"/>
+        <Button android:id="@+id/btnExport" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="12dp" android:text="Xuất bản sao lưu JSON" android:textColor="#FFFFFF" android:background="@drawable/bg_primary_button"/>
+        <Button android:id="@+id/btnImport" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Nhập bản sao lưu JSON" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnResetDemo" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="14dp" android:text="Khôi phục dữ liệu mẫu" android:textColor="#FFFFFF" android:background="@drawable/bg_danger_button"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:layout_marginTop="22dp" android:text="Đồ án cá nhân – Ngô Hồng Bảo
+MSSV: 2311553403
+Thiết kế và xây dựng ứng dụng quản lý ghi chú cá nhân trên Android" android:textColor="?android:attr/textColorSecondary"/>
+</LinearLayout></ScrollView>
