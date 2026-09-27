@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="?android:attr/windowBackground">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+    <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="44dp" android:text="← Quay lại" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+    <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:textSize="30sp" android:textStyle="bold" android:textColor="?android:attr/textColorPrimary"/>
+    <TextView android:id="@+id/tvFlags" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/brand_blue" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvMeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="?android:attr/textColorSecondary"/>
+    <TextView android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="220dp" android:layout_marginTop="18dp" android:textSize="17sp" android:lineSpacingExtra="5dp" android:background="@drawable/bg_card" android:padding="16dp" android:textColor="?android:attr/textColorPrimary"/>
+    <Button android:id="@+id/btnEdit" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="18dp" android:text="Chỉnh sửa" android:textColor="#FFFFFF" android:background="@drawable/bg_primary_button"/>
+    <Button android:id="@+id/btnShare" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Chia sẻ ghi chú" android:textColor="@color/brand_blue" android:background="@drawable/bg_secondary_button"/>
+    <Button android:id="@+id/btnDelete" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="Chuyển vào thùng rác" android:textColor="#FFFFFF" android:background="@drawable/bg_danger_button"/>
+</LinearLayout></ScrollView>
