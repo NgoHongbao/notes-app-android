@@ -26,11 +26,9 @@
 - Hoạt động offline với SQLite
 
 ## Demo sản phẩm
-Mã demo nằm tại `docs/index.html`.
-
-Sau khi bật GitHub Pages từ nhánh `main` và thư mục `/docs`, demo có địa chỉ:
-
-**https://ngohongbao.github.io/notes-app-android/**
+- File demo trong repo: `docs/index.html`
+- Demo mở trực tiếp: https://raw.githack.com/NgoHongbao/notes-app-android/main/docs/index.html
+- GitHub Pages (sau khi bật Pages cho `main /docs`): https://ngohongbao.github.io/notes-app-android/
 
 ## Mở project
 Mở repository bằng Android Studio, chờ Gradle Sync rồi chạy trên emulator hoặc điện thoại Android.
