@@ -1,0 +1,22 @@
+KIỂM TRA PROJECT
+================
+Đề tài: Thiết kế và xây dựng ứng dụng quản lý ghi chú cá nhân trên Android
+Sinh viên: Ngô Hồng Bảo
+MSSV: 2311553403
+
+Số file Java: 19
+Số file XML: 18
+XML parse: PASS
+Kiểm tra cân bằng dấu ngoặc Java: PASS
+
+Tính năng: CRUD, search, important, pin, category, priority, sort/filter, reminder, trash, statistics, dark mode, draft, JSON backup, share.
+Tối ưu: SQLite indexes, singleton DB, background query, debounce, stale-query guard, ViewHolder, transaction, selectionArgs.
+
+LƯU Ý MÔI TRƯỜNG TẠO FILE:
+- Môi trường hiện tại không có Android SDK/Android Emulator nên chưa chạy build APK trực tiếp tại đây.
+- Project được tạo theo cấu trúc Android Studio/Gradle và XML đã được parse tĩnh.
+- Mở bằng Android Studio, Sync Gradle và Run trên emulator/điện thoại để kiểm thử runtime.
+- gradle-wrapper.jar không được nhúng sẵn; chạy TAO_GRADLE_WRAPPER_WINDOWS.bat nếu IDE yêu cầu wrapper.
+
+Lỗi phát hiện:
+Không có lỗi tĩnh được phát hiện.
