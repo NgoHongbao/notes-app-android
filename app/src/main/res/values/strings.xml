@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ghi Chú Cá Nhân</string>
+    <string-array name="categories">
+        <item>Cá nhân</item><item>Học tập</item><item>Công việc</item><item>Ý tưởng</item><item>Mua sắm</item><item>Khác</item>
+    </string-array>
+    <string-array name="categories_filter">
+        <item>Tất cả</item><item>Cá nhân</item><item>Học tập</item><item>Công việc</item><item>Ý tưởng</item><item>Mua sắm</item><item>Khác</item>
+    </string-array>
+    <string-array name="priorities"><item>Thấp</item><item>Trung bình</item><item>Cao</item></string-array>
+    <string-array name="sort_options">
+        <item>Mới cập nhật</item><item>Cũ nhất</item><item>Ghim trước</item><item>Quan trọng trước</item><item>Ưu tiên cao</item><item>Tên A-Z</item>
+    </string-array>
+</resources>
